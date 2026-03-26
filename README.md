@@ -29,7 +29,8 @@ When people talk about "a Transformer model," they are usually referring to the 
 
 2. The Behavioral Level: Supervised Fine-Tuning (SFT)
 
-        An SFT model is a Transformer that has gone through a second, more disciplined stage of training. This is the stage that turns a "Base" model into an      "Instruct" or "Chat" model (like the difference between Llama-3-Base and Llama-3-Instruct).
+        An SFT model is a Transformer that has gone through a second, more disciplined stage of training.
+       This is the stage that turns a "Base" model into an "Instruct" or "Chat" model (like the difference between Llama-3-Base and Llama-3-Instruct).
 
        Training Method: Supervised learning using Input-Output pairs (e.g., Input: "What is the capital of France?" → Output: "The capital of France is Paris.").
 
@@ -37,7 +38,7 @@ When people talk about "a Transformer model," they are usually referring to the 
 
        Analogy: That same genius now attending a finishing school where they learn how to answer questions, follow instructions, and be polite.
 
-        fine-tuning is a "top-off" to a model's existing education. If the model was fine-tuned to act like a medical assistant but you ask it about quantum physics           (which was in its pre-training but not its fine-tuning), it will:
+        Fine-tuning is a "top-off" to a model's existing education. If the model was fine-tuned to act like a medical assistant but you ask it about quantum physics           (which was in its pre-training but not its fine-tuning), it will:
 
         Use its original knowledge from pre-training to find the answer.
 
@@ -54,16 +55,16 @@ When people talk about "a Transformer model," they are usually referring to the 
 
     The "transformation" happens through Three Pillars of its Design
 
-    Self-Attention: This allows the model to "attend" to different words in a sentence to understand their relationship. It transforms raw words into context-aware        representations. For example, in "The bank of the river," the word "bank" is transformed into a geographical concept rather than a financial one.
+    # Self-Attention: This allows the model to "attend" to different words in a sentence to understand their relationship. It transforms raw words into context-aware        representations. For example, in "The bank of the river," the word "bank" is transformed into a geographical concept rather than a financial one.
 
-    Parallelization: Older models (RNNs) were like a person reading a book one word at a time. A Transformer is like a person looking at the entire page at once. This     architectural shift allows it to transform data much faster during training.
+    # Parallelization: Older models (RNNs) were like a person reading a book one word at a time. A Transformer is like a person looking at the entire page at once.          This architectural shift allows it to transform data much faster during training.
 
-    Positional Encoding: Since it looks at everything at once, it needs a way to remember word order. It transforms each word by adding a mathematical "signature"         that indicates its position in the sentence.
+    # Positional Encoding: Since it looks at everything at once, it needs a way to remember word order. It transforms each word by adding a mathematical "signature"         that indicates its position in the sentence.
 
 
 ### Attention mechanism
 
-    how they use the "Attention" mechanism to process information.  
+    How they use the "Attention" mechanism to process information.?  
     Encoder-only (BERT), Decoder-only (GPT), and Encoder-Decoder (T5) models?
     
     While all three are built on the Transformer architecture, they differ in how they use the "Attention" mechanism to process information. 
